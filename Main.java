@@ -1,11 +1,13 @@
 public class Main {
-    String fname = "John";
-    String lname = "Doe";
-    int age = 24;
+    int x;
 
-    public static void main(String[] args) {
+    public Main() {
+        x = 5;
+    }
+
+    public static void main(String[] args)
+    {
         Main myObj = new Main();
-        System.out.println("Name: " + myObj.fname + " " + myObj.lname);
-        System.out.println("Age: " + myObj.age);
+        System.out.println(myObj.x);
     }
 }
