@@ -1,13 +1,19 @@
-public class Main {
-    int x;
-
-    public Main() {
-        x = 5;
+class Animal {
+    public void animalSound() {
+        System.out.println("The animal makes a sound");
     }
+}
 
-    public static void main(String[] args)
-    {
-        Main myObj = new Main();
-        System.out.println(myObj.x);
+class Dog extends Animal {
+    public void animalSound() {
+        super.animalSound();
+        System.out.println("The dog says: bow wow");
+    }
+}
+
+public class Main {
+    public static void main(String args[]) {
+        Animal myDog = new Dog(); 
+        myDog.animalSound();
     }
 }
