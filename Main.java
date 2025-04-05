@@ -1,19 +1,11 @@
-class Animal {
-    public void animalSound() {
-        System.out.println("The animal makes a sound");
-    }
-}
-
-class Dog extends Animal {
-    public void animalSound() {
-        super.animalSound();
-        System.out.println("The dog says: bow wow");
-    }
-}
-
 public class Main {
-    public static void main(String args[]) {
-        Animal myDog = new Dog(); 
-        myDog.animalSound();
+    String fname = "John";
+    String lname = "Doe";
+    int age = 24;
+
+    public static void main(String[] args) {
+        Main myObj = new Main();
+        System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+        System.out.println("Age: " + myObj.age);
     }
 }
